@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+</head>
+<body>
+    <!--upper left-->
+    <div class="container1">
+        <div class="weather-side">
+            <div class="gradient1"></div>
+            <div class="date-container1">
+                
+            </div>
+
+            <div class="weather-container1">
+                
+            </div>
+        </div>
+
+        <div class="info-side">
+            <div class="today-info-container1">
+                <div class="today-info">
+                    
+                </div>
+            </div>
+
+            <div class="location-container1">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+                <input type="text" class="location">
+                <button class="location-button">
+                    <span>search</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--upper right-->
+    <div class="container2">
+        <div id="mapDiv"></div>
+        <div class="other-city">
+            <div class="gradient2"></div>
+            <div class="city1">
+
+            </div>
+            <div class="city2">
+
+            </div>
+            <div class="city3">
+                
+            </div>
+        </div>
+    </div>
+
+    <!--bottom left-->
+    <div class="container3">
+        <h2 class="chart1-name">Temperature in the same period within 5 days</h2>
+        <div>
+            <!--line chart-->
+            <canvas id="myChart1"></canvas>
+        </div>
+    </div>
+
+    <!--bottom right-->
+    <div class="container4">
+        <h2 class="chart2-name">Sea Level and Grnd Level in the same period within 5 days</h2>
+        <div>
+            <!--bar chart-->
+            <canvas id="myChart2"></canvas>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>
